@@ -1,0 +1,63 @@
+===========================
+= Final Exam Instructions =
+===========================
+
+Your task is defined as follows:
+
+	- Implement the get_highest_path_weight function in tree.c.
+	- Implement the count_siblings function in tree.c.
+	- Write unit tests for both functions.
+
+
+get_highest_path_weight
+=======================
+Suppose we have the following tree:
+
+		1
+	       / \
+	      2   3
+             / \   \
+            5   4   6
+
+A path shall be defined as any ordered set of tree nodes {x1, x2, ..., xN} where
+x1 is the root of the tree, xN is any node in the tree, and for any i between 1
+and N, x(i + 1) is a child of x(i). Thus, in the example above, the paths are:
+
+	{1, 2, 5}
+	{1, 2, 4}
+	{1, 2}
+	{1, 3, 6}
+	{1, 3}
+	{1}
+
+The weight of a given path of a tree shall be defined as the sum of the values
+of all nodes in the path. NOTE THAT THE VALUE OF A TREE NODE MAY BE NEGATIVE.
+Your get_highest_path_weight function should compute the highest path weight
+for a given tree. In this example, that number would be 10 corresponding to the
+path {1, 3, 6}.
+
+
+count_siblings
+==============
+Two nodes form a sibling pair if they have the same parent node. Your
+count_sibling function should simply count the number of such pairs in a
+given tree. In the example above, we would count 2 pairs: (2, 3) and (5, 4).
+
+
+Testing
+=======
+You will need to be able to create various trees to write good unit tests.
+You can always create the trees manually, but that's tedious. Best is if you
+build the trees using your build tree function from PA08 in combination with
+input files. Feel free to add helper functions to tree.c and tree.h.
+
+
+Submission
+==========
+To submit you work, do just like you did for exam 2, navigate back to the parent
+of your final exam directory, and compress the final exam directory with:
+
+	zip -r <final exam directory>.zip <final exam directory>
+
+where <final exam directory> is the name of that directory. Submit the zipped
+folder through the final exam quiz on Brightspace.

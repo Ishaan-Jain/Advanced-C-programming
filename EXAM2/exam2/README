@@ -1,0 +1,32 @@
+Exam II Instructions
+~~~~~~~~~~~~~~~~~~~~
+
+There are seven functions to be implemented and tested. The functions' 
+declarations and descriptions can be found in src/list.h. The functions'
+implementations should go in src/list.c. The unit tests should go in the
+seven test source files in the tests directory.
+
+Make sure to read the comments in src/list.h. The linked list you are 
+implementing is a circular, doubly linked list.
+
+Remember that you are graded on three aspects: functionality of the code you
+write in src/list.c, the quality of your unit tests in the tests directory, and
+your Makefile.
+
+Feel free to add in your own main.c file in the src directory for quick testing.
+The functions to be implemented should be quite short. Don't overthink things.
+
+To submit, navigate up to the parent directory that contains this exam folder,
+and zip up the whole folder with:
+
+	zip -r <folder name>.zip <folder name>
+
+Just like the practice exam. Before you submit, make sure you zipped up the
+folder correctly by unzipping it IN ANOTHER DIRECTORY with:
+
+	unzip <folder name>.zip
+
+and verifying that the uncompressed folder is exactly the same as your exam
+folder.
+
+Submit your zip file on Brightspace.
