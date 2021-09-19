@@ -52,4 +52,3 @@ FreqEntry *calculate_frequencies(char *filename)
 
 	return freqArray;
 }
-
